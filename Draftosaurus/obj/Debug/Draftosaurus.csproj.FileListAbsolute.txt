@@ -1,0 +1,12 @@
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\bin\Debug\Draftosaurus.exe.config
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\bin\Debug\Draftosaurus.exe
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\bin\Debug\Draftosaurus.pdb
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\bin\Debug\DraftServer.dll
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.csproj.AssemblyReference.cache
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.Form1.resources
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.Properties.Resources.resources
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.csproj.GenerateResource.cache
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.csproj.CoreCompileInputs.cache
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosa.4084A68B.Up2Date
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.exe
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.pdb
