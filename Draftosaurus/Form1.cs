@@ -14,10 +14,13 @@ namespace Draftosaurus
 {
     public partial class Form1 : Form
     {
+
+        private string versao;
         public Form1()
         {
             InitializeComponent();
-            lblVersao.Text = Jogo.versao;
+            this.versao = Jogo.versao;
+            lblVersao.Text = this.versao;
         }
 
         private void btnCarregarJogo_Click(object sender, EventArgs e)
@@ -52,10 +55,6 @@ namespace Draftosaurus
             lstPartidas.Visible = false;
             pnlRegistro.Visible = true;
             pnlEntrar.Visible = false;
-
-            IniciarPartida criarPartida = new IniciarPartida();
-            criarPartida.ShowDialog();
-
         }
 
         private void pnlRegistro_Paint(object sender, PaintEventArgs e)
@@ -84,40 +83,8 @@ namespace Draftosaurus
             
             string[] partes = linhaSelecionada.Split('|');
             int idPartida = Convert.ToInt32(partes[0].Trim());
-            ListarJogadores(idPartida);
         }
-        private void ListarJogadores(int idPartida)
-        {
-            
-            string retorno = Jogo.ListarJogadores(idPartida);
-
-            
-            if (string.IsNullOrEmpty(retorno) || retorno.StartsWith("ERRO"))
-            {
-                MessageBox.Show("Não foi possível listar os jogadores ou a partida está vazia.");
-                return;
-            }
-
-            
-            retorno = retorno.Replace("\r", "").Trim();
-            string[] linhas = retorno.Split('\n');
-
-          
-            string listaFormatada = "Jogadores na partida " + idPartida + ":\n";
-
-            foreach (string linha in linhas)
-            {
-                string[] dados = linha.Split(',');
-                if (dados.Length >= 2)
-                {
-                    string idJogador = dados[0];
-                    string nomeJogador = dados[1];
-                    listaFormatada += $"- {nomeJogador} (ID: {idJogador})\n";
-                }
-            }
-
-            MessageBox.Show(listaFormatada, "Lista de Jogadores");
-        }
+        
 
         private void btnEntrarPartida_Click(object sender, EventArgs e)
         {
@@ -132,12 +99,85 @@ namespace Draftosaurus
             int idPartida = Convert.ToInt32(txtIdPartida.Text);
             string senhaPartida = txtSenhaPartida.Text.Trim();
             string nomeJogador = txtNomeJogador.Text;
-
-            MessageBox.Show($"ID: '{txtIdPartida.Text}' | Senha: '{txtSenhaPartida.Text}' | Nome: '{txtNomeJogador.Text}'");
             string partida = Jogo.Entrar(idPartida, nomeJogador, senhaPartida);
-            MessageBox.Show("Retorno: " + partida);
+
+            string[] dados = partida.Split(',');
+            if (dados.Length >= 2)
+            {
+                this.idJogador = Convert.ToInt32(dados[0]);
+                this.senhaJogador = dados[1];
+                txtIdJogador.Text = dados[0];
+                txtSenhaJogador.Text = dados[1];
+            }
+            else
+            {
+                MessageBox.Show("Retorno inesperado: " + partida);
+            }
+        }
+
+        private void btnListarJogadores_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtIdPartida.Text, out int idPartida))
+            {
+                MessageBox.Show("Por favor, informe um ID de partida válido.");
+                return;
+            }
+
+            ListarJogadores(idPartida);
+        }
+
+        private void ListarJogadores(int idPartida)
+        {
+            string retorno = Jogo.ListarJogadores(idPartida);
+            if (string.IsNullOrEmpty(retorno) || retorno.StartsWith("ERRO"))
+            {
+                MessageBox.Show("Não foi possível listar os jogadores ou a partida está vazia.");
+                return;
+            }
+
+            retorno = retorno.Replace("\r", "").Trim();
+            string[] linhas = retorno.Split('\n');
+
+            lstJogadores.Items.Clear();
+
+            foreach (string linha in linhas)
+            {
+                string[] dados = linha.Split(',');
+                if (dados.Length >= 2)
+                {
+                    string idJogador = dados[0];
+                    string nomeJogador = dados[1];
+                    lstJogadores.Items.Add($"- {nomeJogador} (ID: {idJogador})");
+                }
+            }
+        }
+
+        private void btnIniciarJogo_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtIdPartida.Text, out int idPartida) || idPartida == 0)
+            {
+                MessageBox.Show("Você precisa informar o id da partida.");
+                return;
+            }
+
+            string retorno = Jogo.ListarJogadores(idPartida);
+            if (string.IsNullOrEmpty(retorno) || retorno.StartsWith("ERRO"))
+            {
+                MessageBox.Show("Não foi possível listar os jogadores ou a partida está vazia.");
+                return;
+            }
+
+            string resultado = Jogo.Iniciar(idJogador, senhaJogador);
+            if (string.IsNullOrEmpty(resultado) || resultado.StartsWith("ERRO"))
+            {
+                MessageBox.Show("Erro ao iniciar: " + resultado);
+                return;
+            }
+
+            IniciarPartida criarPartida = new IniciarPartida();
+            criarPartida.Versao = this.versao;
+            criarPartida.Resultado = resultado;
+            criarPartida.ShowDialog();
         }
     }
-
-
 }

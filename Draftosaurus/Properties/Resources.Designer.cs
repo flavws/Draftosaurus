@@ -113,6 +113,26 @@ namespace Draftosaurus.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnIniciarJogo {
+            get {
+                object obj = ResourceManager.GetObject("btnIniciarJogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnListarJogadores {
+            get {
+                object obj = ResourceManager.GetObject("btnListarJogadores", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnListarPartidas {
             get {
                 object obj = ResourceManager.GetObject("btnListarPartidas", resourceCulture);
