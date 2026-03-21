@@ -22,3 +22,4 @@ C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosa.4084A68B.Up2D
 C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.exe
 C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.pdb
 C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.IniciarPartida.resources
+C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.IniciarPartida.resources

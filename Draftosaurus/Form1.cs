@@ -24,6 +24,7 @@ namespace Draftosaurus
         {
             lstPartidas.Visible = true;
             pnlRegistro.Visible = false;
+            pnlEntrar.Visible = false;
 
             string retorno = Jogo.ListarPartidas("T");
 
@@ -50,6 +51,8 @@ namespace Draftosaurus
         {
             lstPartidas.Visible = false;
             pnlRegistro.Visible = true;
+            pnlEntrar.Visible = false;
+
             IniciarPartida criarPartida = new IniciarPartida();
             criarPartida.ShowDialog();
 
@@ -65,8 +68,8 @@ namespace Draftosaurus
         {
             string nomePartida = txtNomePartida.Text;
             string senha = txtSenha.Text;
-            string nomeJogador = txtNomeGrupo.Text;
-            string partida = Jogo.CriarPartida(nomePartida, senha, nomeJogador);
+            string nomeGrupo = "Naturalistas";
+            string partida = Jogo.CriarPartida(nomePartida, senha, nomeGrupo);
             MessageBox.Show("Partida criada!", "Bem-vindo(a)", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -81,8 +84,6 @@ namespace Draftosaurus
             
             string[] partes = linhaSelecionada.Split('|');
             int idPartida = Convert.ToInt32(partes[0].Trim());
-
-            
             ListarJogadores(idPartida);
         }
         private void ListarJogadores(int idPartida)
@@ -118,8 +119,24 @@ namespace Draftosaurus
             MessageBox.Show(listaFormatada, "Lista de Jogadores");
         }
 
+        private void btnEntrarPartida_Click(object sender, EventArgs e)
+        {
+            lstPartidas.Visible = false;
+            pnlRegistro.Visible = false;
+            pnlEntrar.Visible = true;
 
+        }
 
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            int idPartida = Convert.ToInt32(txtIdPartida.Text);
+            string senhaPartida = txtSenhaPartida.Text.Trim();
+            string nomeJogador = txtNomeJogador.Text;
+
+            MessageBox.Show($"ID: '{txtIdPartida.Text}' | Senha: '{txtSenhaPartida.Text}' | Nome: '{txtNomeJogador.Text}'");
+            string partida = Jogo.Entrar(idPartida, nomeJogador, senhaPartida);
+            MessageBox.Show("Retorno: " + partida);
+        }
     }
 
 
