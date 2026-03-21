@@ -57,6 +57,7 @@
             this.lstPartidas.Size = new System.Drawing.Size(315, 364);
             this.lstPartidas.TabIndex = 2;
             this.lstPartidas.Visible = false;
+            this.lstPartidas.SelectedIndexChanged += new System.EventHandler(this.lstPartidas_SelectedIndexChanged);
             // 
             // lblVersao
             // 
@@ -95,9 +96,9 @@
             this.lblNomePartida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblNomePartida.Location = new System.Drawing.Point(15, 34);
             this.lblNomePartida.Name = "lblNomePartida";
-            this.lblNomePartida.Size = new System.Drawing.Size(38, 13);
+            this.lblNomePartida.Size = new System.Drawing.Size(74, 13);
             this.lblNomePartida.TabIndex = 7;
-            this.lblNomePartida.Text = "Nome:";
+            this.lblNomePartida.Text = "Nome Partida:";
             // 
             // lblNomeGrupo
             // 
@@ -105,9 +106,9 @@
             this.lblNomeGrupo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblNomeGrupo.Location = new System.Drawing.Point(15, 100);
             this.lblNomeGrupo.Name = "lblNomeGrupo";
-            this.lblNomeGrupo.Size = new System.Drawing.Size(70, 13);
+            this.lblNomeGrupo.Size = new System.Drawing.Size(85, 13);
             this.lblNomeGrupo.TabIndex = 8;
-            this.lblNomeGrupo.Text = "Nome Grupo:";
+            this.lblNomeGrupo.Text = "Nome do Grupo:";
             // 
             // txtSenha
             // 

@@ -109,5 +109,25 @@ namespace Draftosaurus.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2026_03_19_at_23_17_28 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2026-03-19 at 23.17.28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2026_03_19_at_23_17_28_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp_Image_2026-03-19_at_23.17.28-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

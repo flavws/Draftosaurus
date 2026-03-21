@@ -10,3 +10,15 @@ C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Dra
 C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosa.4084A68B.Up2Date
 C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.exe
 C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.pdb
+C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\bin\Debug\Draftosaurus.exe.config
+C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\bin\Debug\Draftosaurus.exe
+C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\bin\Debug\Draftosaurus.pdb
+C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.csproj.AssemblyReference.cache
+C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.Form1.resources
+C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.Properties.Resources.resources
+C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.csproj.GenerateResource.cache
+C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.csproj.CoreCompileInputs.cache
+C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosa.4084A68B.Up2Date
+C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.exe
+C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.pdb
+C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.IniciarPartida.resources
