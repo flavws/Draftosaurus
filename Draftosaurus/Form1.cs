@@ -64,7 +64,7 @@ namespace Draftosaurus
         private void btnSalvarRegistro_Click(object sender, EventArgs e)
         {
             string nomePartida = txtNomePartida.Text;
-            string senha = txtSenha.Text;
+            string senha = textBox3.Text;
             string nomeJogador = txtNomeGrupo.Text;
             string partida = Jogo.CriarPartida(nomePartida, senha, nomeJogador);
             MessageBox.Show("Partida criada!", "Bem-vindo(a)", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -117,8 +117,6 @@ namespace Draftosaurus
 
             MessageBox.Show(listaFormatada, "Lista de Jogadores");
         }
-
-
 
     }
 
