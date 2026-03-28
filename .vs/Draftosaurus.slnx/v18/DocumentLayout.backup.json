@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Fl\u00E1via\\Documents\\Faculdade\\PI3\\Draftosaurus\\",
+  "WorkspaceRootPath": "C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|c:\\users\\fl\u00E1via\\documents\\faculdade\\pi3\\draftosaurus\\draftosaurus\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|solutionrelative:draftosaurus\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|c:\\users\\fl\u00E1via\\documents\\faculdade\\pi3\\draftosaurus\\draftosaurus\\iniciarpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\draftosaurus\\iniciarpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|solutionrelative:draftosaurus\\iniciarpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|c:\\users\\fl\u00E1via\\documents\\faculdade\\pi3\\draftosaurus\\draftosaurus\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|solutionrelative:draftosaurus\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\draftosaurus\\iniciarpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|solutionrelative:draftosaurus\\iniciarpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|c:\\users\\fl\u00E1via\\documents\\faculdade\\pi3\\draftosaurus\\draftosaurus\\iniciarpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|solutionrelative:draftosaurus\\iniciarpartida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\draftosaurus\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|solutionrelative:draftosaurus\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\draftosaurus\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0C27178-D522-4ACC-8EAA-63E172C49B86}|Draftosaurus\\Draftosaurus.csproj|solutionrelative:draftosaurus\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Fl\u00E1via\\Documents\\Faculdade\\PI3\\Draftosaurus\\Draftosaurus\\Form1.cs",
+              "DocumentMoniker": "C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\Draftosaurus\\Form1.cs",
               "RelativeDocumentMoniker": "Draftosaurus\\Form1.cs",
-              "ToolTip": "C:\\Users\\Fl\u00E1via\\Documents\\Faculdade\\PI3\\Draftosaurus\\Draftosaurus\\Form1.cs*",
-              "RelativeToolTip": "Draftosaurus\\Form1.cs*",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAcwLQAAAAxAAAAAAAAAA==",
+              "ToolTip": "C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\Draftosaurus\\Form1.cs",
+              "RelativeToolTip": "Draftosaurus\\Form1.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAuwBMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-21T16:21:02.987Z",
               "IsPinned": true,
@@ -44,44 +44,54 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IniciarPartida.cs",
-              "DocumentMoniker": "C:\\Users\\Fl\u00E1via\\Documents\\Faculdade\\PI3\\Draftosaurus\\Draftosaurus\\IniciarPartida.cs",
-              "RelativeDocumentMoniker": "Draftosaurus\\IniciarPartida.cs",
-              "ToolTip": "C:\\Users\\Fl\u00E1via\\Documents\\Faculdade\\PI3\\Draftosaurus\\Draftosaurus\\IniciarPartida.cs",
-              "RelativeToolTip": "Draftosaurus\\IniciarPartida.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswBkAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-21T20:03:18.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Fl\u00E1via\\Documents\\Faculdade\\PI3\\Draftosaurus\\Draftosaurus\\Form1.cs",
+              "DocumentMoniker": "C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\Draftosaurus\\Form1.cs",
               "RelativeDocumentMoniker": "Draftosaurus\\Form1.cs",
-              "ToolTip": "C:\\Users\\Fl\u00E1via\\Documents\\Faculdade\\PI3\\Draftosaurus\\Draftosaurus\\Form1.cs [Design]*",
-              "RelativeToolTip": "Draftosaurus\\Form1.cs [Design]*",
+              "ToolTip": "C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\Draftosaurus\\Form1.cs [Design]",
+              "RelativeToolTip": "Draftosaurus\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-21T20:37:29.42Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "IniciarPartida.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Fl\u00E1via\\Documents\\Faculdade\\PI3\\Draftosaurus\\Draftosaurus\\IniciarPartida.cs",
+              "DocumentMoniker": "C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\Draftosaurus\\IniciarPartida.cs",
               "RelativeDocumentMoniker": "Draftosaurus\\IniciarPartida.cs",
-              "ToolTip": "C:\\Users\\Fl\u00E1via\\Documents\\Faculdade\\PI3\\Draftosaurus\\Draftosaurus\\IniciarPartida.cs [Design]",
-              "RelativeToolTip": "Draftosaurus\\IniciarPartida.cs [Design]",
+              "ToolTip": "C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\Draftosaurus\\IniciarPartida.cs [Design]*",
+              "RelativeToolTip": "Draftosaurus\\IniciarPartida.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-21T20:03:05.165Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IniciarPartida.cs",
+              "DocumentMoniker": "C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\Draftosaurus\\IniciarPartida.cs",
+              "RelativeDocumentMoniker": "Draftosaurus\\IniciarPartida.cs",
+              "ToolTip": "C:\\N\u00EDcolas\\Senac\\PII\\Draftosaurus\\Draftosaurus\\IniciarPartida.cs*",
+              "RelativeToolTip": "Draftosaurus\\IniciarPartida.cs*",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA0wD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T20:03:18.998Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }

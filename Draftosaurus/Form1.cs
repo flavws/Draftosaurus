@@ -16,6 +16,8 @@ namespace Draftosaurus
     {
 
         private string versao;
+        private int idJogador;
+        private string senhaJogador;
         public Form1()
         {
             InitializeComponent();
