@@ -113,5 +113,23 @@
   <ItemGroup>
     <None Include="Resources\WhatsApp_Image_2026-03-19_at_23.17.28-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCriarPartida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnListarPartidas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEntrarPartida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEntrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnListarJogadores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnIniciarJogo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
