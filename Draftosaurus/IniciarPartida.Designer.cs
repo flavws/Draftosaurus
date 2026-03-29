@@ -39,6 +39,7 @@
             this.lstDinos = new System.Windows.Forms.ListBox();
             this.lblEspeciesDinos = new System.Windows.Forms.Label();
             this.lstMao = new System.Windows.Forms.ListBox();
+            this.lblTurno = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -98,7 +99,6 @@
             this.btnIniciarJogo.TabIndex = 19;
             this.btnIniciarJogo.Text = "Iniciar Jogo";
             this.btnIniciarJogo.UseVisualStyleBackColor = true;
-            this.btnIniciarJogo.Click += new System.EventHandler(this.btnIniciarJogo_Click);
             // 
             // button2
             // 
@@ -152,12 +152,22 @@
             this.lstMao.Size = new System.Drawing.Size(120, 95);
             this.lstMao.TabIndex = 25;
             // 
+            // lblTurno
+            // 
+            this.lblTurno.AutoSize = true;
+            this.lblTurno.Location = new System.Drawing.Point(600, 29);
+            this.lblTurno.Name = "lblTurno";
+            this.lblTurno.Size = new System.Drawing.Size(35, 13);
+            this.lblTurno.TabIndex = 26;
+            this.lblTurno.Text = "label1";
+            // 
             // IniciarPartida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OliveDrab;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblTurno);
             this.Controls.Add(this.lstMao);
             this.Controls.Add(this.lblEspeciesDinos);
             this.Controls.Add(this.lstDinos);
@@ -191,5 +201,6 @@
         private System.Windows.Forms.ListBox lstDinos;
         private System.Windows.Forms.Label lblEspeciesDinos;
         private System.Windows.Forms.ListBox lstMao;
+        private System.Windows.Forms.Label lblTurno;
     }
 }

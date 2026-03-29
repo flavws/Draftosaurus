@@ -1,15 +1,7 @@
 ﻿using Draft;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Draftosaurus
@@ -19,51 +11,26 @@ namespace Draftosaurus
 
         public string Versao { get; set; }
         public string Resultado { get; set; }
-        private bool partidaIniciada = false;
-        public IniciarPartida()
+        private Jogador jogador { get; set; }
+        private Partida partida { get; set; }
+        private readonly Dictionary<string, Dinossauro> Dinossauros = new Dictionary<string, Dinossauro>
+{
+    { "BR", new Dinossauro { Nome = "Branquiossauro", Cor = "Roxo" } },
+    { "EP", new Dinossauro { Nome = "Epinossauro", Cor = "Laranja" } },
+    { "ET", new Dinossauro { Nome = "Estegossauro", Cor = "Azul" } },
+    { "PA", new Dinossauro { Nome = "Parasaurolófo", Cor = "Verde" } },
+    { "TI", new Dinossauro { Nome = "Tiranossauro", Cor = "Vermelho" } },
+    { "TR", new Dinossauro { Nome = "Tricerátops", Cor = null } }
+};
+        public IniciarPartida(string versao, Jogador jogador, string res, Partida partida)
         {
             InitializeComponent();
-            //string infos = Jogo.Entrar(1266, "melkson15", "1234");
-            //Jogo.Entrar(1266, "melkson13", "1234");
-            //if (!infos.StartsWith("ERRO"))
-            //{
-            //    string[] info = infos.Split(',');
-
-            //    this.listarDinos(Int32.Parse(info[0]), info[1]);
-            //}
-            
-        }
-        private void listarDinos(Int32 id, string senha)
-        {
-            //string iniciar = Jogo.Iniciar(id, senha);
-
-            string res = Jogo.ExibirMao(id, senha);
-            if (!res.StartsWith("ERRO"))
-            {
-                string[] maos = res.Trim().Split('\n');
-                int i = 0;
-                foreach (string mao in maos)
-                {
-                    if (i>0)
-                    {
-                        string[] infos = mao.Replace("\r", "").Split(',');
-                        if (infos.Length > 0)
-                        {
-                            Label dino = new Label();
-                            dino.Text = $"tipo: {infos[0]} quantidade: {infos[1]}";
-                            dino.Size = new Size(30, 30);
-                            dino.Location = new Point(50 * i, 200);
-                            dino.BackColor = Color.White;
-                            dino.ForeColor = Color.Black;
-                            dino.Font = new Font("Arial", 10, FontStyle.Bold);
-                            this.Controls.Add(dino);
-                        }
-                    }
-                    i++;
+            this.Versao = versao;
+            this.jogador = jogador;
+            this.Resultado = res;
+            this.partida = partida;
 
 
-                }
-            }
         }
         private void btnVoltar_Click(object sender, EventArgs e)
         {
@@ -74,40 +41,38 @@ namespace Draftosaurus
         {
             lblVersao.Text = Versao;
             string[] dados = Resultado.Split(',');
+            string[] data = this.partida.Verificar();
             if (dados.Length >= 2)
-            {
-                lblJogadorAtual.Text = dados[0];
-                lblFaceDado.Text = dados[1];
+            {             
+                this.partida.loadJogadores();
+                Jogador jogador = this.partida.jogadores[Int32.Parse(dados[0])];
+                string[] face = this.partida.facesDados[dados[1]];
+                this.partida.face = dados[1];
+                lblJogadorAtual.Text = $"Jogador atual:{jogador.nome}";
+                lblFaceDado.Text = $"Face do dado:{face[1]}";
+                lblTurno.Text = $"Turno: {data[1]}";
             }
-        }
-
-        private void btnIniciarJogo_Click(object sender, EventArgs e)
-        {
-            partidaIniciada = true;
         }
 
         private void btnExibirMao_Click(object sender, EventArgs e)
         {
-            if (!partidaIniciada)
-            {
-                MessageBox.Show("A partida não foi iniciada. Não é possível exibir a mão.");
-                return;
-            }
             lstMao.Items.Clear();
-
-            Random rnd = new Random();
-
-            for (int i = 0; i < 6; i++)
+            try
             {
-                int indice = rnd.Next(0, lstDinos.Items.Count);
-                lstMao.Items.Add(lstDinos.Items[indice]);
+                string[] dinos = this.jogador.ExibirMao();
+                foreach (var dino in dinos)
+                {
+                    string[] info = dino.Split(',');
+                    if (this.Dinossauros.ContainsKey(info[0])){
+                        Dinossauro dinossauro = this.Dinossauros[info[0]];
+                        lstMao.Items.Add($"{dinossauro.Nome}-{info[1]}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao exibir mao " + ex.Message);
             }
         }
-            
-    
-    
-    
-    
-    
     }
 }

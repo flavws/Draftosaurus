@@ -1,14 +1,6 @@
 ﻿using Draft;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Draft;
 
 namespace Draftosaurus
 {
@@ -16,13 +8,14 @@ namespace Draftosaurus
     {
 
         private string versao;
-        private int idJogador;
-        private string senhaJogador;
+        private Partida partida;
+        private Jogador jogador;
         public Form1()
         {
             InitializeComponent();
             this.versao = Jogo.versao;
             lblVersao.Text = this.versao;
+            
         }
 
         private void btnCarregarJogo_Click(object sender, EventArgs e)
@@ -102,12 +95,12 @@ namespace Draftosaurus
             string senhaPartida = txtSenhaPartida.Text.Trim();
             string nomeJogador = txtNomeJogador.Text;
             string partida = Jogo.Entrar(idPartida, nomeJogador, senhaPartida);
-
+            
             string[] dados = partida.Split(',');
             if (dados.Length >= 2)
             {
-                this.idJogador = Convert.ToInt32(dados[0]);
-                this.senhaJogador = dados[1];
+                this.jogador = new Jogador(Convert.ToInt32(dados[0]), dados[1]);
+                this.partida = new Partida(idPartida);
                 txtIdJogador.Text = dados[0];
                 txtSenhaJogador.Text = dados[1];
             }
@@ -169,16 +162,14 @@ namespace Draftosaurus
                 return;
             }
 
-            string resultado = Jogo.Iniciar(idJogador, senhaJogador);
+            string resultado = Jogo.Iniciar(this.jogador.id, this.jogador.senha);
             if (string.IsNullOrEmpty(resultado) || resultado.StartsWith("ERRO"))
             {
                 MessageBox.Show("Erro ao iniciar: " + resultado);
                 return;
             }
 
-            IniciarPartida criarPartida = new IniciarPartida();
-            criarPartida.Versao = this.versao;
-            criarPartida.Resultado = resultado;
+            IniciarPartida criarPartida = new IniciarPartida(this.versao, this.jogador, resultado, this.partida);
             criarPartida.ShowDialog();
         }
     }

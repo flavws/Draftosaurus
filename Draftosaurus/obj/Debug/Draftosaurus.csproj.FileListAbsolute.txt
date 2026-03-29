@@ -23,3 +23,16 @@ C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.exe
 C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.pdb
 C:\Nícolas\Senac\PII\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.IniciarPartida.resources
 C:\Users\Flávia\Documents\Faculdade\PI3\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.IniciarPartida.resources
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.csproj.AssemblyReference.cache
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.exe.config
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.IniciarPartida.resources
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.Form1.resources
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.Properties.Resources.resources
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.csproj.GenerateResource.cache
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.csproj.CoreCompileInputs.cache
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.exe
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\obj\Debug\Draftosaurus.pdb
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\bin\Debug\Draftosaurus.exe.config
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\bin\Debug\Draftosaurus.exe
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\bin\Debug\Draftosaurus.pdb
+C:\Users\Melks\Source\Repos\Draftosaurus\Draftosaurus\obj\Debug\Draftosa.4084A68B.Up2Date
