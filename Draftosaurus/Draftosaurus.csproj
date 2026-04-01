@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cercado.cs" />
     <Compile Include="Partida.cs" />
     <Compile Include="Dinossauro.cs" />
     <Compile Include="Jogador.cs" />
